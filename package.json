@@ -1,23 +1,14 @@
 {
-  "name": "eslint-plugin-lint-erb",
-  "version": "0.0.0",
-  "description": "Allow eslinting, erb files.",
-  "keywords": [
-    "eslint",
-    "eslintplugin",
-    "eslint-plugin"
-  ],
-  "author": "lint-erb",
+  "name": "eslint-plugin-rails-erb",
+  "version": "0.1.0",
+  "description": "An Eslint plugin designed for linting *.js.erb files in a Rails project",
+  "author": "Joe Haffey",
   "main": "lib/index.js",
-  "scripts": {
-    "test": "mocha tests --recursive"
-  },
   "dependencies": {
     "requireindex": "~1.1.0"
   },
   "devDependencies": {
-    "eslint": "~2.6.0",
-    "mocha": "^2.4.5"
+    "eslint": ">=5.0.0"
   },
   "engines": {
     "node": ">=0.10.0"
