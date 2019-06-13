@@ -1,38 +1,37 @@
-# eslint-plugin-lint-erb
+# eslint-plugin-rails-erb
 
-Allow eslinting, erb files.
+This plugin is designed to allow for the linting of `*.js.erb` files in a Ruby on Rails application by processing the file text to remove any Rails code in the javascript file.
 
 ## Installation
 
-You'll first need to install [ESLint](http://eslint.org):
+1) You'll need to install [ESLint](http://eslint.org):
 
 ```
-$ npm i eslint --save-dev
+$ yarn add eslint --dev
 ```
 
-Next, clone this repo into your local machine as it is not published to npm.
-
-Finally, install `eslint-plugin-lint-erb`:
+2) Since this repo is not published to npm, you'll need to clone it to your local machine:
 
 ```
-$ npm install <relative-path-to-your-cloned-eslint-plugin-lint-erb> --save-dev
+git clone git@github.com:jhaffey259/eslint-plugin-rails-erb.git
 ```
 
-**Note:** If you installed ESLint globally (using the `-g` flag) then you must also install `eslint-plugin-lint-erb` globally.
+3) Install the `eslint-plugin-rails-erb` package from your local repo:
+
+```
+$ yarn add ~/path/to/eslint-plugin-rails-erb --dev
+```
+
+**Note:** If you installed ESLint globally (using the `-g` flag) then you must also install `eslint-plugin-rails-erb` globally.
 
 ## Usage
 
-Add `lint-erb` to the plugins section of your `.eslintrc` configuration file. You can omit the `eslint-plugin-` prefix:
+Add `rails-erb` to the plugins section of your `.eslintrc` configuration file. You can omit the `eslint-plugin-` prefix:
 
 ```json
 {
     "plugins": [
-        "lint-erb"
+        "rails-erb"
     ]
 }
 ```
-
-
-
-
-
