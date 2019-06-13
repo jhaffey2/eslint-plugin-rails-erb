@@ -34,8 +34,9 @@ $ yarn add ~/path/to/eslint-plugin-rails-erb --dev
 
 1) Add `rails-erb` to the plugins section of your `.eslintrc.js` configuration file. You can omit the `eslint-plugin-` prefix:
 
-```json
+```javascript
 module.exports = {
+    // ...
     'plugins': [
         'rails-erb'
     ]
