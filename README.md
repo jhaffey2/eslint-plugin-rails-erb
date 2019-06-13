@@ -10,7 +10,13 @@ This plugin is designed to allow for the linting of `*.js.erb` files in a Ruby o
 $ yarn add eslint --dev
 ```
 
-2) Since this repo is not published to npm, you'll need to clone it to your local machine:
+2) Initialize eslint and your `.eslintrc.js` configuration file:
+
+```
+yarn eslint --init
+```
+
+3) Since this repo is not published to npm, you'll need to clone it to your local machine:
 
 ```
 git clone git@github.com:jhaffey259/eslint-plugin-rails-erb.git
@@ -26,12 +32,19 @@ $ yarn add ~/path/to/eslint-plugin-rails-erb --dev
 
 ## Usage
 
-Add `rails-erb` to the plugins section of your `.eslintrc` configuration file. You can omit the `eslint-plugin-` prefix:
+1) Add `rails-erb` to the plugins section of your `.eslintrc.js` configuration file. You can omit the `eslint-plugin-` prefix:
 
 ```json
-{
-    "plugins": [
-        "rails-erb"
+module.exports = {
+    ...,
+    'plugins': [
+        'rails-erb'
     ]
 }
+```
+
+2) Run ESLint!
+
+```
+yarn eslint **/*.js.erb
 ```
