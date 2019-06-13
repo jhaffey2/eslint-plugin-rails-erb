@@ -36,7 +36,6 @@ $ yarn add ~/path/to/eslint-plugin-rails-erb --dev
 
 ```json
 module.exports = {
-    ...,
     'plugins': [
         'rails-erb'
     ]
